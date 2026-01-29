@@ -1,7 +1,6 @@
 from context.context import DeviceContext
-from states.ninety_six_well_plate import NinetySixWellPlate
+from states.test import TestProtocol
 
 if __name__ == "__main__":
-    context = DeviceContext(NinetySixWellPlate())
-
+    context = DeviceContext(TestProtocol())
     context.run()
