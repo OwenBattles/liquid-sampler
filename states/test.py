@@ -47,7 +47,11 @@ class TestProtocol(State):
     def move_to_next_well(self, context):
         """Move to the next well in the current plate."""
         pass
-    
+
+    def move_to_next_row(self, context):
+        """Move to the next row in the current plate."""
+        pass
+
     def pause_over_well(self, context):
         """Pause over the current well."""
         pass

@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 class State(ABC):
     @abstractmethod
     def run(self, context):
-        """This function orchestrates the entire process"""
+        """This function runs the entire protocol"""
         pass
 
     @abstractmethod
@@ -12,10 +12,11 @@ class State(ABC):
         pass
 
     @abstractmethod
-    def move_to_next_well(self, context):   
-        """This function handles the moving from one well to another within a plate"""    
+    def move_to_next_well(self, context):
+        """Move from one well to another within a plate."""
         pass
 
-    def pause_over_well(self, context):
-        """This function handles how long the syringe hovers over each well"""
+    @abstractmethod
+    def move_to_next_row(self, context):
+        """Move from one row to another within a plate."""
         pass

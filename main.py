@@ -1,6 +1,6 @@
 from context.context import DeviceContext
-from states.test import TestProtocol
+from states.basic_culturing import BasicCulturing
 
 if __name__ == "__main__":
-    context = DeviceContext(TestProtocol())
+    context = DeviceContext(BasicCulturing())
     context.run()
